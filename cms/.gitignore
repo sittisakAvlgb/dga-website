@@ -1,0 +1,26 @@
+############################
+# Strapi / Node
+############################
+.tmp/
+.cache/
+.strapi/
+.strapi-updater.json
+dist/
+build/
+node_modules/
+.env
+*.local
+
+# database (dev)
+*.db
+*.sqlite
+
+# uploads (production ควรใช้ provider เช่น S3/GDCC)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# logs / os
+*.log
+.DS_Store
+Thumbs.db
+exports/

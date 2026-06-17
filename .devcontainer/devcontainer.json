@@ -1,0 +1,26 @@
+{
+  "name": "DGA CMS (Strapi v5) + Frontend",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "forwardPorts": [1337, 8080],
+  "portsAttributes": {
+    "1337": { "label": "DGA CMS Admin (Strapi)", "onAutoForward": "openBrowserOnce" },
+    "8080": { "label": "DGA Frontend (static)", "onAutoForward": "silent" }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ritwickdey.LiveServer"
+      ]
+    }
+  },
+  "remoteEnv": {
+    "STRAPI_TELEMETRY_DISABLED": "true",
+    "BROWSER": "none"
+  }
+}

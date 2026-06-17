@@ -1,0 +1,17 @@
+# บังคับ LF สำหรับสคริปต์ที่ต้องรันบน Linux/Codespaces (กันปัญหา CRLF จาก Windows)
+*.sh        text eol=lf
+*.bash      text eol=lf
+
+# ไฟล์เว็บทั่วไป — normalize เป็น LF
+*.html      text eol=lf
+*.css       text eol=lf
+*.js        text eol=lf
+*.json      text eol=lf
+*.md        text eol=lf
+
+# ไฟล์ binary — ห้ามแก้ไข
+*.webp      binary
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.ico       binary

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_seos",
+  "info": {
+    "displayName": "SEO",
+    "icon": "search",
+    "description": "Meta สำหรับ SEO/AEO (ใช้ซ้ำได้ทุก content-type)"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": { "type": "string", "maxLength": 60 },
+    "metaDescription": { "type": "text", "maxLength": 160 },
+    "keywords": { "type": "string" },
+    "ogImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  }
+}

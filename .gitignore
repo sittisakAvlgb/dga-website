@@ -1,0 +1,18 @@
+# เครื่องมือ/หน่วยความจำของ Claude — ไม่ต้องขึ้น repo
+.claude/
+
+# ระบบปฏิบัติการ
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# logs / temp
+*.log
+npm-debug.log*
+
+# secrets
+.env
+*.local
+
+# node (เผื่อมีในอนาคต — CMS มี .gitignore ของตัวเองแยกใน cms/)
+node_modules/

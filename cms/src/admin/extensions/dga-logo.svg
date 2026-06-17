@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" role="img" aria-label="DGA">
+  <rect width="44" height="44" rx="12" fill="#EE5020"/>
+  <rect width="44" height="44" rx="12" fill="url(#g)"/>
+  <text x="22" y="28.5" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-weight="700" font-size="15" letter-spacing="-0.5" fill="#ffffff">DGA</text>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7A45"/>
+      <stop offset="1" stop-color="#D63B12"/>
+    </linearGradient>
+  </defs>
+</svg>

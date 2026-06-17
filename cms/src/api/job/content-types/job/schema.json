@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "ตำแหน่งงาน (Job)",
+    "description": "ตำแหน่งงานที่เปิดรับของ สพร. (Careers)"
+  },
+  "options": { "draftAndPublish": true },
+  "pluginOptions": { "i18n": { "localized": true } },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "department": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "employmentType": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "location": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "salary": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "deadline": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "openings": {
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "pluginOptions": { "i18n": { "localized": false } }
+    },
+    "summary": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "responsibilities": {
+      "type": "json",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "qualifications": {
+      "type": "json",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "benefits": {
+      "type": "json",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "deptKey": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": false } }
+    },
+    "typeKey": {
+      "type": "enumeration",
+      "enum": ["fulltime", "contract", "internship"],
+      "default": "fulltime",
+      "pluginOptions": { "i18n": { "localized": false } }
+    }
+  }
+}
